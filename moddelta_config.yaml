@@ -1,0 +1,16 @@
+# ModDelta Config #
+version: '1.0'
+base_path: 'D:\\SteamLibrary\\steamapps\\common' # путь к папке, в которой лежат ЧИСТАЯ и МОДИФИЦИРОВАННАЯ игры
+hta_folder_name: 'Hard Truck Apocalypse' # ИМЯ чистой игры
+
+# Список вхождений, которые будут проигнорированы #
+ignore:
+    - 'data\profiles'
+    - 'data\editor\newmap'
+    - 'data\editor\DiffMasks'
+    - 'data\editor\settings.xml'
+    - 'data\config.cfg'
+    - 'data\m3deditor.cfg'
+    - 'data\gsmed.cfg'
+    - '.bak\'
+    - '.ssl.bak'
