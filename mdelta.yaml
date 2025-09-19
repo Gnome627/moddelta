@@ -1,0 +1,10 @@
+ignore:
+    - 'data\profiles'
+    - 'data\editor\newmap'
+    - 'data\editor\DiffMasks'
+    - 'data\editor\settings.xml'
+    - 'data\config.cfg'
+    - 'data\m3deditor.cfg'
+    - 'data\gsmed.cfg'
+    - '.bak\'
+    - '.ssl.bak'
