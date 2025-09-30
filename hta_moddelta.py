@@ -5,25 +5,26 @@ from easygui import diropenbox
 from datetime import datetime
 import yaml
 
-version='2.0'
+version='2.1'
+
+config = None
+mdeltaignore = [
+    'data\\profiles',
+    'data\\editor\\newmap',
+    'data\\editor\\DiffMasks',
+    'data\\editor\\settings.xml',
+    'data\\config.cfg',
+    'data\\m3deditor.cfg',
+    'data\\gsmed.cfg',
+    '.bak\\',
+    '.ssl.bak' 
+]
 
 try:
     with open('mdelta.yaml', 'r', encoding='utf-8') as f:
         config = yaml.safe_load(f)
-        mdeltaignore = config['ignore']
+        if 'ignore' in config: mdeltaignore = config['ignore']
 except:
-    config = None
-    mdeltaignore = [
-        'data\\profiles',
-        'data\\editor\\newmap',
-        'data\\editor\\DiffMasks',
-        'data\\editor\\settings.xml',
-        'data\\config.cfg',
-        'data\\m3deditor.cfg',
-        'data\\gsmed.cfg',
-        '.bak\\',
-        '.ssl.bak' 
-    ]
     print('🚫 файл конфигурации не найден')
 
 
