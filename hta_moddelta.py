@@ -5,7 +5,7 @@ from easygui import diropenbox
 from datetime import datetime
 import yaml
 
-version='2.0'
+version='2.1'
 
 config = None
 mdeltaignore = [
